@@ -1,8 +1,13 @@
-import random 
+import random
+import os
+from dotenv import load_dotenv
+
+#Import the user's name from the .env file
+user_name = os.getenv("USER_NAME", default="Player One")
 
 # Start game
 
-print("Welcome Player One to the game!")
+print("Welcome", user_name, "to the game!")
 
 print("Rock, Paper, Scissors, Shoot!")
 
