@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 
 #Import the user's name from the .env file
+load_dotenv()
 user_name = os.getenv("USER_NAME", default="Player One")
 
 # Start game
